@@ -1,0 +1,15 @@
+@extends('base')
+
+@section('content')
+
+	<h1 style="text-align: center; margin-top: 50px;">{{ $article->title }}</h1>
+  	<hr>
+  	<div id="date" style="text-align: right;">
+    	{{ $article->updated_at }}
+  	</div>
+  	<div id="content" style="padding: 50px;">
+      	 <?php echo($article->body) ?>
+  	</div>
+  	<div id="comments" style="margin-bottom: 100px;">
+
+@endsection
