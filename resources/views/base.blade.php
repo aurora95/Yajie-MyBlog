@@ -23,11 +23,14 @@
     <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body>
+
+    @if (!Agent::isMobile())
     <div id="title" style="text-align: center;">
         <h1>贰</h1>
         <div style="padding: 5px; font-size: 16px;">大风起兮 心若止水身似云 黄鹤游兮 背负青天羽为襟</div>
     </div>
     <hr>
+    @endif
 
     <div class="container">
     <div class="row">

@@ -6,6 +6,8 @@ use Illuminate\Support\ServiceProvider;
 
 use App\ArticleClass;
 
+use View;
+
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -15,7 +17,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        view()->share('articleclasses', ArticleClass::all());
+        View::composer('base', function($view)
+        {
+            $view->with('articleclasses', ArticleClass::all());
+        });
     }
 
     /**
