@@ -29,8 +29,9 @@
         <h1>贰</h1>
         <div style="padding: 5px; font-size: 16px;">大风起兮 心若止水身似云 黄鹤游兮 背负青天羽为襟</div>
     </div>
-    <hr>
     @endif
+
+    <hr>
 
     <div class="container">
     <div class="row">
