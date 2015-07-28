@@ -37,11 +37,14 @@ class Authenticate
         if ($this->auth->guest()) {
             if ($request->ajax()) {
                 return response('Unauthorized.', 401);
-            } else {
+            } 
+            else {
                 return redirect()->guest('auth/login');
             }
         }
-
+        else if($this->auth->user()->name != "admin"){
+            return response('Unauthorized.', 401);
+        }
         return $next($request);
     }
 }
