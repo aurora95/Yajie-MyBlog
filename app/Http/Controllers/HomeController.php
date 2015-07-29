@@ -14,7 +14,9 @@ class HomeController extends Controller
     
     public function index()
     {
-        return view('Home')->withArticles(Article::all());
+        return view('Home')->withArticles(Article::all()->sortByDesc(function($article){
+    		return $article->created_at;
+		}));
     }
 
 }

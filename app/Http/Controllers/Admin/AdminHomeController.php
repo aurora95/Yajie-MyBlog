@@ -15,7 +15,7 @@ class AdminHomeController extends Controller
     
     public function index()
     {
-        return view('AdminHome')->withArticles(Article::all());
+        return view('AdminHome')->withArticles(Article::all()->sortByDesc(function($article){ return $article->created_at; }));
     }
 
 }
