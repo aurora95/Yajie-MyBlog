@@ -24,7 +24,7 @@
             <input type="hidden" name="classname" value="{{ $classname }}">
             <input type="text" name="title" class="form-control" required="required">
             <br>
-            <textarea name="body" rows="10" class="form-control" required="required"></textarea>
+            <textarea name="body" rows="500" class="form-control" required="required"></textarea>
             <script type="text/javascript">CKEDITOR.replace('body');</script>
             <br>
             <button class="btn btn-lg btn-info">新增 article</button>

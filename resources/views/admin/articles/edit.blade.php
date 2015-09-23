@@ -25,7 +25,7 @@
             <input type="hidden" name="_token" value="{{ csrf_token() }}">
             <input type="text" name="title" class="form-control" required="required" value="{{ $article->title }}">
             <br>
-            <textarea name="body" rows="100" class="form-control" required="required">{{ $article->body }}</textarea>
+            <textarea name="body" rows="500" class="form-control" required="required">{{ $article->body }}</textarea>
             <script type="text/javascript">CKEDITOR.replace('body');</script>
             <br>
             <button class="btn btn-lg btn-info">编辑 Page</button>
