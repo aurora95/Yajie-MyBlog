@@ -40,7 +40,6 @@ template {
 a {
   background-color: transparent;
 }
-a:link {color:gray;}
 a:active,
 a:hover {
   outline: 0;
@@ -895,7 +894,7 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #337ab7;
+  color: #777777;
   text-decoration: none;
 }
 a:hover,
